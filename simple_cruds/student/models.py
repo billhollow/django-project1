@@ -21,3 +21,6 @@ class Student(models.Model):
                 name='name'
             ),
         ]
+
+    def __str__(self):
+        return f'{self.name} - {self.email}'
